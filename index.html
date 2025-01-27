@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dad Joke Generator</title>
+    <title>Human Body Fact Generator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,48 +51,48 @@
 </head>
 <body>
     <div class="container">
-        <h1>Dad Joke Generator</h1>
-        <p id="joke"></p>
-        <button id="new-joke-btn">Get a New Joke</button>
+        <h1>Human Body Fact Generator</h1>
+        <p id="fact"></p>
+        <button id="new-fact-btn">Get a New Fact</button>
     </div>
 
     <script>
-        const jokes = [
-            "Why don’t skeletons fight each other? They don’t have the guts.",
-            "I only know 25 letters of the alphabet. I don’t know y.",
-            "I used to play piano by ear, but now I use my hands.",
-            "What did one ocean say to the other ocean? Nothing, they just waved.",
-            "I told my wife she was drawing her eyebrows too high. She looked surprised.",
-            "What do you call fake spaghetti? An impasta.",
-            "I’m reading a book on anti-gravity. It’s impossible to put down!",
-            "Why don’t eggs tell jokes? They might crack up.",
-            "How does a penguin build its house? Igloos it together.",
-            "I asked the librarian if the library had any books on paranoia. She whispered, 'They’re right behind you.'",
-            "What do you call a can opener that doesn’t work? A can’t opener.",
-            "Why can’t you hear a pterodactyl go to the bathroom? Because the 'P' is silent.",
-            "What do you call a pile of cats? A meow-tain.",
-            "I’m on a whiskey diet. I’ve lost three days already.",
-            "I used to be a baker, but I couldn’t make enough dough.",
-            "Why did the scarecrow win an award? Because he was outstanding in his field!",
-            "I told my computer I needed a break, and now it won’t stop sending me Kit-Kats.",
-            "What’s orange and sounds like a parrot? A carrot.",
-            "What did the left eye say to the right eye? Between you and me, something smells."
+        const facts = [
+            "The human body has 206 bones, and about a quarter of them are in the hands and feet.",
+            "Your stomach gets a new lining every 3 to 4 days to prevent it from digesting itself.",
+            "The human brain generates more electrical impulses in a single day than all the telephones in the world combined.",
+            "Your heart beats about 100,000 times a day, pumping around 2,000 gallons of blood.",
+            "The average adult human body contains about 37.2 trillion cells.",
+            "You shed about 30,000 to 40,000 skin cells every minute.",
+            "A human’s sense of smell is capable of recognizing over 1 trillion different scents.",
+            "The human liver has over 500 functions, including detoxification, protein synthesis, and the production of biochemicals necessary for digestion.",
+            "Your bones are about five times stronger than steel of the same density.",
+            "A human body contains enough fat to make seven bars of soap.",
+            "The human eye can distinguish about 10 million different colors.",
+            "When you sleep, your body repairs muscles, consolidates memories, and boosts your immune system.",
+            "The human body has more bacterial cells than human cells.",
+            "Your skin is the body’s largest organ and accounts for about 16% of your total body weight.",
+            "The strongest muscle in the human body (based on size) is the masseter, the jaw muscle.",
+            "The human body can survive without food for weeks but only about 3 to 5 days without water.",
+            "Humans are the only species known to blush.",
+            "Your body has its own natural painkiller called endorphins.",
+            "Your nose can remember 50,000 different scents."
         ];
 
-        const jokeElement = document.getElementById('joke');
-        const newJokeButton = document.getElementById('new-joke-btn');
+        const factElement = document.getElementById('fact');
+        const newFactButton = document.getElementById('new-fact-btn');
 
-        // Function to display a random joke
-        function displayRandomJoke() {
-            const randomIndex = Math.floor(Math.random() * jokes.length);
-            jokeElement.textContent = jokes[randomIndex];
+        // Function to display a random fact
+        function displayRandomFact() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            factElement.textContent = facts[randomIndex];
         }
 
-        // Event listener for the button to show a new joke
-        newJokeButton.addEventListener('click', displayRandomJoke);
+        // Event listener for the button to show a new fact
+        newFactButton.addEventListener('click', displayRandomFact);
 
-        // Display the first joke when the page loads
-        window.onload = displayRandomJoke;
+        // Display the first fact when the page loads
+        window.onload = displayRandomFact;
     </script>
 </body>
 </html>
